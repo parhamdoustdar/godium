@@ -72,7 +72,7 @@ func infoCommand() cli.Command {
 			}
 
 			m := medium.NewClientWithAccessToken(accessToken)
-			user, err := m.GetUser()
+			user, err := m.GetUser("")
 			if err != nil {
 				return err
 			}
@@ -156,7 +156,7 @@ func publishAction(c *cli.Context) error {
 	}
 
 	m := medium.NewClientWithAccessToken(accessToken)
-	user, err := m.GetUser()
+	user, err := m.GetUser("")
 	if err != nil {
 		return err
 	}
