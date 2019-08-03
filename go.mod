@@ -8,5 +8,6 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/skratchdot/open-golang v0.0.0-20190402232053-79abb63cd66e
 	github.com/urfave/cli v1.20.0
+	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
 	gopkg.in/yaml.v2 v2.2.2 // indirect
 )

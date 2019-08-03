@@ -35,7 +35,11 @@ func main() {
 	app.Copyright = "MIT"
 	app.Usage = "Interact with the Medium publishing platform through the command line."
 
-	app.Run(os.Args)
+	err := app.Run(os.Args)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 }
 
 func addTokenCommand() cli.Command {
